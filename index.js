@@ -13,8 +13,7 @@ module.exports = function(patterns){
 
   deglob(patterns,function(err,files){
     files.sort()
-    s.emit('files',files)
-    console.log(files)
+    s.emit('files',files.slice())
     stream(files)
   })
 
