@@ -31,3 +31,14 @@ test("can",function(t){
   })
 
 })
+
+
+
+test("ends when there are no files.",function(t){
+  var s = readmany(__dirname+'/fixtures/*.doesnt-exist')
+  s.on('data',function(){})
+  eos(s,function(err){
+    t.ok(!err,'should not have error')
+    t.end()
+  })
+})
