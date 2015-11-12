@@ -1,6 +1,6 @@
 {
   "name": "fs-readstream-many",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "read a glob of files as a single read stream",
   "main": "index.js",
   "scripts": {
